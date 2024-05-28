@@ -3,7 +3,7 @@
 ## PathMoveView 主要是通过Paint获取字体的Path，提供给PathMeasure采样。来进一步掌握path 的采样
 
 ## 显示效果
-<video src="视频链接" controls="controls" width="500" height="300">您的浏览器不支持播放该视频！</video>
+<video src="https://github.com/hirezy/PathMoveView/blob/main/blob/Screen_recording_20240528_174523.webm" controls="controls" width="500" height="300">您的浏览器不支持播放该视频！</video>
 
 
 ## 特色功能
@@ -258,16 +258,16 @@ GlideApp.with(this)
         .as(PictureDrawable.class)
         .transition(withCrossFade())
         .load(uri).into(new CustomTarget<PictureDrawable>() {
-            @Override
-            public void onResourceReady(@NonNull PictureDrawable resource, @Nullable Transition<? super PictureDrawable> transition) {
-                imageView.setShapeResource(resource);
-            }
+    @Override
+    public void onResourceReady(@NonNull PictureDrawable resource, @Nullable Transition<? super PictureDrawable> transition) {
+        imageView.setShapeResource(resource);
+    }
 
-            @Override
-            public void onLoadCleared(@Nullable Drawable placeholder) {
+    @Override
+    public void onLoadCleared(@Nullable Drawable placeholder) {
 
-            }
-        });
+    }
+});
 ```
 
 - 网络资源
@@ -278,16 +278,16 @@ GlideApp.with(this)
         .as(PictureDrawable.class)
         .transition(withCrossFade())
         .load(uri).into(new CustomTarget<PictureDrawable>() {
-            @Override
-            public void onResourceReady(@NonNull PictureDrawable resource, @Nullable Transition<? super PictureDrawable> transition) {
-                imageView.setShapeResource(resource);
-            }
-            
-            @Override
-            public void onLoadCleared(@Nullable Drawable placeholder) {
-            
-            }
-        });
+    @Override
+    public void onResourceReady(@NonNull PictureDrawable resource, @Nullable Transition<? super PictureDrawable> transition) {
+        imageView.setShapeResource(resource);
+    }
+
+    @Override
+    public void onLoadCleared(@Nullable Drawable placeholder) {
+
+    }
+});
 ```
 
 ### 番外：如果您的图形资源图想要用网络图片（即不打包到apk中）
