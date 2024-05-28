@@ -34,6 +34,7 @@ class MainActivity : ComponentActivity() {
                             text = "Compose Example",
                             modifier = Modifier
                                 .fillMaxWidth()
+                                .padding(top = 20.dp)
                                 .height(44.dp)
                         )
                     }
@@ -62,7 +63,7 @@ fun LoadAndroidViewByPathMoveView() {
         factory = {
             PathMoveView(it)
         },
-        modifier = Modifier.wrapContentSize().padding(top = 80.dp)
+        modifier = Modifier.wrapContentSize().padding(top = 120.dp)
     ) {
         it.start()
     }
