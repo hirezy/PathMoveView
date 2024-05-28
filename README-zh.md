@@ -91,3 +91,10 @@ postInvalidateDelayed(1000);
 postInvalidateDelayed(16);
 }
 ```
+# 色彩亮度
+> RGB颜色模型有个缺点，不能直观调整亮度和色彩饱和度，为了解决这个问题，我们需要引入HSL、HSV、YUV等，这里我们使用HSL。
+* 色相（H） 是色彩的基本属性，就是平常所说的颜色名称，如红色、黄色等。
+* 饱和度（S） 是指色彩的纯度，越高色彩越纯，低则逐渐变灰，取 0-1f 的数值。
+* 亮度（L） ，取 0-1f，增加亮度，颜色会向白色变化；减少亮度，颜色会向黑色变化。
+
+<img src="https://github.com/hirezy/PathMoveView/blob/main/blob/hls.jpg" controls="controls" width="500" height="300"></img>
